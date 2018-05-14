@@ -12,5 +12,9 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    byebug
+    if session[:name] == nil
+      session[:name]
+    end
   end
 end
